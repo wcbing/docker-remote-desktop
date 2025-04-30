@@ -2,8 +2,7 @@
 
 # Create the user account
 if ! id ubuntu >/dev/null 2>&1; then
-    groupadd --gid 1020 ubuntu
-    useradd --shell /bin/bash --uid 1020 --gid 1020 --groups sudo --password "$(openssl passwd ubuntu)" --create-home --home-dir /home/ubuntu ubuntu
+    useradd --shell /bin/bash --uid 1020 --groups sudo --password "$(openssl passwd ubuntu)" --create-home ubuntu
 fi
 
 # Remove existing sesman/xrdp PID files to prevent rdp sessions hanging on container restart
