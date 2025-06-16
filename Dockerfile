@@ -36,14 +36,11 @@ RUN apt-get update && \
         locales \
         pavucontrol \
         pulseaudio \
-        pulseaudio-utils \
         software-properties-common \
         sudo \
         vim \
-        x11-xserver-utils \
         xfce4 \
         xfce4-goodies \
-        xfce4-pulseaudio-plugin \
         xorgxrdp \
         xrdp \
         xubuntu-icon-theme && \
